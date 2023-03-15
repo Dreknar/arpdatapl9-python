@@ -15,16 +15,16 @@ if "Iza" in contacts.keys():
     print("Kontakt istnieje.")
 
 # Dodawanie nowych kluczy | Modyfikacja wartości
-contacts["Iza"] = "123321312"
-print(contacts)
-contacts["Adam"] = "000000000"
-print(contacts)
+# contacts["Iza"] = "123321312"
+# print(contacts)
+# contacts["Adam"] = "000000000"
+# print(contacts)
 
 # Wyświetlenie wybranej wartości
-print(contacts["Ewelina"])
+# print(contacts["Ewelina"])
 
 # 1
-print(contacts.get("Bożydar", -1))
+# print(contacts.get("Bożydar", -1))
 
 # 2
 if "Bożydar" in contacts.keys():
@@ -36,8 +36,8 @@ else:
 contacts.pop("Adam") # W tym przypadku pop nie może być bez arg.
 # Przepisywanie pod nowy klucz
 contacts["Mateusz"] = contacts.pop("Ewelina")
-del contacts["Iza"] # Dla ciekawskich
-print(contacts)
+# del contacts["Iza"] # Dla ciekawskich
+# print(contacts)
 
 # Napisz funkcję o nazwie add_contacts, która przyjmuje następujące argumenty:
 #     - słownik z kontaktami (dict)
@@ -49,7 +49,7 @@ print(contacts)
 # Funkcja niczego nie zwraca (nie używamy z return)
 
 
-def add_contacts(con_dict, key, value):
+def add_contacts(con_dict: dict, key: str, value: str) -> None:
     if key in con_dict.keys():
         print("Kontakt istnieje")
     else:
@@ -61,6 +61,20 @@ contacts2 = {
     "Ewa": "000111222"
 }
 
-add_contacts(contacts2, "Ewa", "123456789")
-add_contacts(contacts2, "Adam", "123456789")
-print(contacts2)
+# add_contacts(contacts2, "Ewa", "123456789")
+# add_contacts(contacts2, "Adam", "123456789")
+
+# Krotka (tuple)
+metadata = ("Python w DS", "1.0", "20230315", "20230315")
+# print(metadata)
+# print(metadata[0], metadata[3], len(metadata))
+# print(metadata.count("20230315"))
+
+# Zbiór
+numbers = {1, 2, 3, 5, 5, 6, 7, 1, 2, 3}
+# Pusty zbiór: n = set()
+print(numbers)
+numbers.add(9) # Dodanie pojedynczego elemntu
+numbers.update([1, 4, 5, 2, 0, 11]) # Dodanie listy elementów
+numbers.update(["a", "b", "c"])
+print(numbers)
