@@ -5,6 +5,7 @@ txt = "Ala ma kota."
 if "pies" in txt:
     print("Ala faktycznie posiada kota.")
 
+
 # Metody dla str
 # print(len(txt))
 # print(txt.upper())
@@ -62,29 +63,30 @@ numbers = [2, 5, 10, 3]
 # print(sum(numbers), max(numbers), min(numbers))
 
 # Dodawanie
-animals.append("Szynszyla")
-print(animals)
-animals.extend(["Mysz", "Kanarek"])
-print(animals)
-animals.insert(1, "Krokodyl")
-print(animals)
+# animals.append("Szynszyla")
+# print(animals)
+# animals.extend(["Mysz", "Kanarek"])
+# print(animals)
+# animals.insert(1, "Krokodyl")
+# print(animals)
 
-# Usuwanie
-animals.remove("Szynszyla")
-print(animals)
-deleted_args = []
+# # Usuwanie
+# animals.remove("Szynszyla")
+# print(animals)
+# deleted_args = []
+#
+# deleted_args.append(animals.pop())  # Jeżeli nie podany idx, usuwamy ostatni element
+# print(animals)
+# deleted_args.append(animals.pop(2))
+# print(animals)
+# deleted_value = animals.pop(0)
+# deleted_args.append(deleted_value)
+# print(animals, deleted_args)
+#
+# # Modyfikacja
+# animals[0] = "Mrówka"
+# print(animals)
 
-deleted_args.append(animals.pop()) # Jeżeli nie podany idx, usuwamy ostatni element
-print(animals)
-deleted_args.append(animals.pop(2))
-print(animals)
-deleted_value = animals.pop(0)
-deleted_args.append(deleted_value)
-print(animals, deleted_args)
-
-# Modyfikacja
-animals[0] = "Mrówka"
-print(animals)
 
 # Napisz funkcję manage_list, która przyjmuje dwa argumenty:
 #     - Opcja: dodaj, usun
@@ -92,3 +94,16 @@ print(animals)
 # Jeżeli wybraliśmy dodaj, wykonany jest append
 # Jeżeli usun - wykonujemy pop()
 # Funkcja niczego nie zwraca
+
+def manage_list(option, value):
+    if option == "dodaj":
+        animals.append(value)
+    elif option == "usun":
+        animals.pop()
+
+
+print(animals)
+manage_list("dodaj", "Karaluch")
+print(animals)
+manage_list("usun", "Koh4y3t789erht87345h86tt")
+print(animals)
