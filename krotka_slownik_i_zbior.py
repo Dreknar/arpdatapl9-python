@@ -38,3 +38,29 @@ contacts.pop("Adam") # W tym przypadku pop nie może być bez arg.
 contacts["Mateusz"] = contacts.pop("Ewelina")
 del contacts["Iza"] # Dla ciekawskich
 print(contacts)
+
+# Napisz funkcję o nazwie add_contacts, która przyjmuje następujące argumenty:
+#     - słownik z kontaktami (dict)
+#     - nazwę klucza (str)
+#     - nr telefonu (str)
+# Następnie funkcja wypisuje na konsoli komunikat:
+#     - "Kontakt dodano", jeżeli dodaliśmy kontakt + dodajemy kontakt. :)
+#     - "Kontakt istnieje", jeżeli podany klucz istnieje w słowniku
+# Funkcja niczego nie zwraca (nie używamy z return)
+
+
+def add_contacts(con_dict, key, value):
+    if key in con_dict.keys():
+        print("Kontakt istnieje")
+    else:
+        con_dict[key] = value
+        print("Kontakt dodano")
+
+
+contacts2 = {
+    "Ewa": "000111222"
+}
+
+add_contacts(contacts2, "Ewa", "123456789")
+add_contacts(contacts2, "Adam", "123456789")
+print(contacts2)
