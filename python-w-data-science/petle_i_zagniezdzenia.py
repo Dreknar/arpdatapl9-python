@@ -58,3 +58,32 @@ accounts = [
 #
 #     Program ma pomijać klucze które są duplikowane (wchodzi pierwsze wystąpienie),
 #     czyli drugi "Adam" powinien być pominięty w przetwarzaniu.
+
+data = [
+    ("Adam", 750),
+    ("Ewa", 250),
+    ("Jakub", 200),
+    ("Elżbieta", 1000),
+    ("Adam", 400),
+    ("Ewa", 300),
+    ("Bożydar", 100)
+]
+
+data_in_dict = {}
+
+print(data[0][0], data[0][1])
+
+for i in range(len(data)):
+    if data[i][0] not in data_in_dict.keys():
+        data_in_dict[ data[i][0] ] = data[i][1] // 50
+
+print(data_in_dict)
+
+
+# Napisz funkcję, która przyjmuja łańcuch znakowy
+#     (dla ułtawienia: same małe litery)
+# Przykładowo: alamakotaakotmapierdolca
+# Funkcja ma zwrócić słownik (return), który zawiera informacje w postaci:
+#     Klucz - litera
+#     Wartość - ilość wystąpień litery w tekście
+# Przykładowo: dla klucza "l" wartości to 2
