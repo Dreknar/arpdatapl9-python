@@ -87,3 +87,27 @@ print(data_in_dict)
 #     Klucz - litera
 #     Wartość - ilość wystąpień litery w tekście
 # Przykładowo: dla klucza "l" wartości to 2
+
+txt = "alamakotaakotmapierdolca"
+
+def char_counter(text: str) -> dict:
+    result = {}
+    for c in text:
+        if c not in result.keys():
+            result[c] = text.count(c)
+
+    return result
+
+def char_counter_alternative(text: str) -> dict:
+    result = {}
+    for c in text:
+        if c in result.keys():
+            result[c] += 1
+        else:
+            result[c] = 1
+
+    return result
+
+
+print(char_counter(txt))
+print(char_counter_alternative(txt))
