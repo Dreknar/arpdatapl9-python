@@ -71,13 +71,13 @@ data = [
 
 data_in_dict = {}
 
-print(data[0][0], data[0][1])
+# print(data[0][0], data[0][1])
 
 for i in range(len(data)):
     if data[i][0] not in data_in_dict.keys():
         data_in_dict[ data[i][0] ] = data[i][1] // 50
 
-print(data_in_dict)
+# print(data_in_dict)
 
 
 # Napisz funkcję, która przyjmuja łańcuch znakowy
@@ -109,5 +109,17 @@ def char_counter_alternative(text: str) -> dict:
     return result
 
 
-print(char_counter(txt))
-print(char_counter_alternative(txt))
+# print(char_counter(txt))
+# print(char_counter_alternative(txt))
+
+n = 0
+while n < 10:
+    # n += 1
+    print(n ** 2)
+
+txt = "ala-ma-kota"
+n = 0
+
+# while n < len(txt):
+#     print(txt[n])
+#     n += 1
