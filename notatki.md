@@ -34,3 +34,11 @@ number = int(txt)
 num = 11.1
 to_str = str(num)
 ```
+
+## Nazewnictwo
+
+- Funkcje: ```len(x)```, ```print(x)```
+- Metody: to funkcje wybranej klasy/wartości np. ```l.append(y)```, ```txt.lower()```, ```d.get(x, y)```
+- Atrybuty/Pole: to zmienne należące do klasy (czyli takie, które definiujemy z użyciem ```self```)
+- Argument == Parametr
+- Wartość: informacja, którą można zapisać np. do zmiennej
