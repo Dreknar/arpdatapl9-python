@@ -20,12 +20,6 @@ class Car:
 
 
 c1 = Car("Czerwony", 4500000, "Ferrari")
-c2 = Car("Zielony", 75000, "Opel")
-print(c1.color, c2.color)
-print(c1.running, c2.running)
-c1.switch()
-print(c1.running)
 print(c1)
-txt = str(c1)
+c1.color = "Srebrny"
 print(c1)
-print(int(c1))
