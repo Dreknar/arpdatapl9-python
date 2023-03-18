@@ -6,6 +6,12 @@ class Car:
         self.running = False
         self.spec = []
 
+    def __str__(self):
+        return f"{self.brand}, {self.color}, {self.price}"
+
+    def __float__(self):
+        return self.price
+
     def switch(self):
         if self.running:
             self.running = False
@@ -19,3 +25,6 @@ print(c1.color, c2.color)
 print(c1.running, c2.running)
 c1.switch()
 print(c1.running)
+print(c1)
+txt = str(c1)
+print(c1)
