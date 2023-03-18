@@ -23,6 +23,15 @@ class Student:
         self.grades = []
         self.avg_grade = 0.0
 
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} - {self.avg_grade}"
+
+    def __int__(self):
+        return int(sum(self.grades))
+
+    def __float__(self):
+        return self.avg_grade
+
     def add_grade(self, grade):
         if grade in (2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0):
             self.grades.append(grade)
