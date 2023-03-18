@@ -1,5 +1,5 @@
 class Car:
-    def __init__(self, color, price, brand):
+    def __init__(self, color, price: float, brand):
         self.color = color
         self.price = price
         self.brand = brand
@@ -9,7 +9,7 @@ class Car:
     def __str__(self):
         return f"{self.brand}, {self.color}, {self.price}"
 
-    def __float__(self):
+    def __int__(self):
         return self.price
 
     def switch(self):
@@ -28,3 +28,4 @@ print(c1.running)
 print(c1)
 txt = str(c1)
 print(c1)
+print(int(c1))

@@ -11,6 +11,11 @@
 # ze zbioru (2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0) oraz po dodaniu oceny
 # automatycznie przelicza średnią.
 
+# Dodać magic functions:
+#     - dla str, aby wyświetlić studenta w formacie: "Imie nazwisko - średnia"
+#     - dla int - suma ocen
+#     - dla float - srednia ocen
+
 class Student:
     def __init__(self, first_name, last_name):
         self.first_name = first_name
