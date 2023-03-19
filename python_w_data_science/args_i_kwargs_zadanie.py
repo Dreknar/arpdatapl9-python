@@ -16,6 +16,12 @@ def calculation(option: str, *args) -> float:
         elif option == "iloczyn":
             for i in range(1, len(args)):
                 result *= args[i]
+        elif option == "iloraz":
+            for i in range(1, len(args)):
+                try:
+                    result /= args[i]
+                except ZeroDivisionError:
+                    continue
 
         return result
     else:
