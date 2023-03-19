@@ -42,4 +42,3 @@ class Product:
 
 
 p1 = Product("Intel i7", "CPU", "000-000-0001", 4999.99)
-p1.
