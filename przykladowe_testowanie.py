@@ -27,4 +27,3 @@ assert show_temp_status(36.6) == "PERFECT"
 assert show_temp_status(30.0) == "NOT OK"
 assert show_temp_status(40.0) == "NOT OK"
 assert show_temp_status("ALA MA KOTA") == "ERROR"
-
