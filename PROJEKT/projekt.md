@@ -13,3 +13,10 @@ Natomiast godzina:minuta ma być również losowana
 (do funkcji timedelta wykorzystać randint)
 
 nazwa pliku: ```dane_dzienmiesiacrok```
+
+# Zadanie 02
+
+Wykorzystując dane z ```Zadanie 01```:
+
+Dodać nową kolumnę do pliku (można do nowego), która będzie wynikiem 
+operacji matematycznej: kol2 * kol3

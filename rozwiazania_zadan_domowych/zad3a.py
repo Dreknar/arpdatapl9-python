@@ -1,6 +1,6 @@
 def trigger_base(func):
-    def wrapper(*args, **kwargs):
-        func(*args, **kwargs)
+    def wrapper(*args):
+        func(*args)
         count_of_star = 0
         for i in range(1, args[0] + 1):
             count_of_star += i
