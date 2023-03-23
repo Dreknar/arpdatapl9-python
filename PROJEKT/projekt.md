@@ -27,3 +27,7 @@ Ostatecznie:
 * war1 (0-100)
 * war2 (0.1-1.0)
 * war1 * war2
+
+# Zadanie 03
+
+Z utworzonego pliku w ```zadaniu nr 2``` znajdźcie największą wartość ostatniej kolumny dla każdej godziny 
