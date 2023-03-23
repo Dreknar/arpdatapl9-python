@@ -19,4 +19,11 @@ nazwa pliku: ```dane_dzienmiesiacrok```
 Wykorzystując dane z ```Zadanie 01```:
 
 Dodać nową kolumnę do pliku (można do nowego), która będzie wynikiem 
-operacji matematycznej: kol2 * kol3
+operacji matematycznej: kol2 * kol3, natomiast pierwsza kolumna ma posiadać informacje tylko o godzinie.
+
+Ostatecznie:
+
+* Godzina
+* war1 (0-100)
+* war2 (0.1-1.0)
+* war1 * war2
